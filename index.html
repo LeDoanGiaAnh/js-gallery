@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <img class="preview" 
+             alt="Beautiful Autumn Forest" 
+             src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=500" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()"
+             onfocus="upDate(this)" 
+             onblur="undo()" 
+             tabindex="0">
+
+        <img class="preview" 
+             alt="Cozy Coffee Cup" 
+             src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()"
+             onfocus="upDate(this)" 
+             onblur="undo()" 
+             tabindex="0">
+
+        <img class="preview" 
+             alt="Charming Coffee Shop" 
+             src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()"
+             onfocus="upDate(this)" 
+             onblur="undo()" 
+             tabindex="0">
+    </div>
+
+    <!-- Nhúng file JavaScript vào cuối thẻ body -->
+    <script src="js/gallery.js"></script>
+</body>
+</html>
